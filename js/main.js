@@ -366,22 +366,6 @@ for (x = 0; x < allRadios.length; x++) {
     };
 }
 
-$(document).ready(function () {
-    $('#vmap').vectorMap({
-      map: 'russia_en',
-      backgroundColor: 'transparent',
-      color: '#279BE2',
-      borderWidth: 1,
-      borderColor: '#fff',
-      borderOpacity: 1,
-      hoverColor: '#DD4887',
-      selectedColor: '#999999',
-      enableZoom: true,
-      showTooltip: true,
-      scaleColors: ['#C8EEFF', '#006491'],
-      normalizeFunction: 'polynomial'
-  });
-});
 
 if (Modernizr.mq('(max-width: 768px)')) {
 
@@ -418,4 +402,449 @@ if (Modernizr.mq('(max-width: 992px)')) {
 
 $(".bot").click(function() {
     $(".rrr").toggleClass('-active');
+});
+
+$(document).ready(function () {
+    $('#vmap').vectorMap({
+      map: 'russia_en',
+      backgroundColor: null,
+      color: '#279BE2',
+      borderWidth: 1,
+      borderColor: '#fff',
+      borderOpacity: 1,
+      hoverColor: '#DD4887',
+      selectedColor: false,
+      enableZoom: false,
+      colors: {
+        mc: "#DD4887",
+        kr: "#DD4887",
+        le: "#DD4887"
+    },
+      showTooltip: true,
+      onLabelShow: function(event, label, code)
+      {
+        if (code == 'mc')
+        {
+            // Hide the label
+            // event.preventDefault();
+            label.html('<p>Санкт-Петербург:</p>br<p><span>520</span>вакансий</p>br<p><span>1320</span>резюме</p>');
+        }
+        else if (code == 'kr')
+        {
+            // Plain TEXT labels
+            label.html('<p>Красноярский край:</p>br<p><span>520</span>вакансий</p>br<p><span>1320</span>резюме</p>');
+        }
+        else if (code == 'le')
+        {
+            // HTML Based Labels. You can use any HTML you want, this is just an example
+            label.html('<p>Ленинградская область:</p>br<p><span>520</span>вакансий</p>br<p><span>1320</span>резюме</p>');
+        }
+        else if (code == 'da')
+        {
+            event.preventDefault();
+        }
+        // da
+        else if (code == 'sa')
+        {
+            event.preventDefault();
+        }
+        // sa
+        else if (code == 'so')
+        {
+            event.preventDefault();
+        }
+        // so
+        else if (code == 'kb')
+        {
+            event.preventDefault();
+        }
+        // kb
+        else if (code == 'kc')
+        {
+            event.preventDefault();
+        }
+        // kc
+        else if (code == 'st')
+        {
+            event.preventDefault();
+        }
+        // st
+        else if (code == 'ks')
+        {
+            event.preventDefault();
+        }
+        // ks
+        else if (code == 'ro')
+        {
+            event.preventDefault();
+        }
+        // ro
+        else if (code == 'kk')
+        {
+            event.preventDefault();
+        }
+        // kk
+        else if (code == 'as')
+        {
+            event.preventDefault();
+        }
+        // as
+        else if (code == 'ad')
+        {
+            event.preventDefault();
+        }
+        // ad
+        else if (code == 'vl')
+        {
+            event.preventDefault();
+        }
+        // vl
+        else if (code == 'vn')
+        {
+            event.preventDefault();
+        }
+        // vn
+        else if (code == 'bl')
+        {
+            event.preventDefault();
+        }
+        // bl
+        else if (code == 'ky')
+        {
+            event.preventDefault();
+        }
+        // ky
+        else if (code == 'or')
+        {
+            event.preventDefault();
+        }
+        // or
+        else if (code == 'lp')
+        {
+            event.preventDefault();
+        }
+        // lp
+        else if (code == 'tl')
+        {
+            event.preventDefault();
+        }
+        // tl
+        else if (code == 'bn')
+        {
+            event.preventDefault();
+        }
+        // bn
+        else if (code == 'kj')
+        {
+            event.preventDefault();
+        }
+        // kj
+        else if (code == 'sm')
+        {
+            event.preventDefault();
+        }
+        // sm
+        else if (code == 'mc')
+        {
+            event.preventDefault();
+        }
+        // mc
+        else if (code == 'rz')
+        {
+            event.preventDefault();
+        }
+        // rz
+        else if (code == 'tb')
+        {
+            event.preventDefault();
+        }
+        // tb
+        else if (code == 'kn')
+        {
+            event.preventDefault();
+        }
+        // kn
+        else if (code == 'ps')
+        {
+            event.preventDefault();
+        }
+        // ps
+        else if (code == 'no')
+        {
+            event.preventDefault();
+        }
+        // no
+        else if (code == 'tr')
+        {
+            event.preventDefault();
+        }
+        // tr
+        else if (code == 'vm')
+        {
+            event.preventDefault();
+        }
+        // vm
+        else if (code == 'pz')
+        {
+            event.preventDefault();
+        }
+        // pz
+        else if (code == 'sr')
+        {
+            event.preventDefault();
+        }
+        // sr
+        else if (code == 'mr')
+        {
+            event.preventDefault();
+        }
+        // mr
+        else if (code == 'cu')
+        {
+            event.preventDefault();
+        }
+        // cu
+        else if (code == 'ul')
+        {
+            event.preventDefault();
+        }
+        // ul
+        else if (code == 'ss')
+        {
+            event.preventDefault();
+        }
+        // ss
+        else if (code == 'ob')
+        {
+            event.preventDefault();
+        }
+        // ob
+        else if (code == 'nn')
+        {
+            event.preventDefault();
+        }
+        // nn
+        else if (code == 'ml')
+        {
+            event.preventDefault();
+        }
+        // ml
+        else if (code == 'da')
+        {
+            event.preventDefault();
+        }
+        // ta
+        else if (code == 'iv')
+        {
+            event.preventDefault();
+        }
+        // iv
+        else if (code == 'yr')
+        {
+            event.preventDefault();
+        }
+        // yr
+        else if (code == 'kt')
+        {
+            event.preventDefault();
+        }
+        // kt
+        else if (code == 'le')
+        {
+            event.preventDefault();
+        }
+        // le
+        else if (code == 'ki')
+        {
+            event.preventDefault();
+        }
+        // ki
+        else if (code == 'bs')
+        {
+            event.preventDefault();
+        }
+        // bs
+        else if (code == 'cl')
+        {
+            event.preventDefault();
+        }
+        // cl
+        else if (code == 'ud')
+        {
+            event.preventDefault();
+        }
+        // ud
+        else if (code == 'pe')
+        {
+            event.preventDefault();
+        }
+        // pe
+        else if (code == 'sv')
+        {
+            event.preventDefault();
+        }
+        // sv
+        else if (code == 'ku')
+        {
+            event.preventDefault();
+        }
+        // ku
+        else if (code == 'ko')
+        {
+            event.preventDefault();
+        }
+        // ko
+        else if (code == 'mu')
+        {
+            event.preventDefault();
+        }
+        // mu
+        else if (code == 'kl')
+        {
+            event.preventDefault();
+        }
+        // kl
+        else if (code == 'vo')
+        {
+            event.preventDefault();
+        }
+        // vo
+        else if (code == 'ar')
+        {
+            event.preventDefault();
+        }
+        // ar
+        else if (code == 'tu')
+        {
+            event.preventDefault();
+        }
+        // tu
+        else if (code == 'ne')
+        {
+            event.preventDefault();
+        }
+        // ne
+        else if (code == 'om')
+        {
+            event.preventDefault();
+        }
+        // om
+        else if (code == 'ht')
+        {
+            event.preventDefault();
+        }
+        // ht
+        else if (code == 'ya')
+        {
+            event.preventDefault();
+        }
+        // ya
+        else if (code == 'tm')
+        {
+            event.preventDefault();
+        }
+        // tm
+        else if (code == 'nv')
+        {
+            event.preventDefault();
+        }
+        // nv
+        else if (code == 'al')
+        {
+            event.preventDefault();
+        }
+        // al
+        else if (code == 'km')
+        {
+            event.preventDefault();
+        }
+        // km
+        else if (code == 'lt')
+        {
+            event.preventDefault();
+        }
+        // lt
+        else if (code == 'tv')
+        {
+            event.preventDefault();
+        }
+        // tv
+        else if (code == 'hk')
+        {
+            event.preventDefault();
+        }
+        // hk
+        else if (code == 'ir')
+        {
+            event.preventDefault();
+        }
+        // ir
+        else if (code == 'br')
+        {
+            event.preventDefault();
+        }
+        // br
+        else if (code == 'zb')
+        {
+            event.preventDefault();
+        }
+        // zb
+        else if (code == 'am')
+        {
+            event.preventDefault();
+        }
+        // am
+        else if (code == 'ch')
+        {
+            event.preventDefault();
+        }
+        // ch
+        else if (code == 'ha')
+        {
+            event.preventDefault();
+        }
+        // ha
+        else if (code == 'eu')
+        {
+            event.preventDefault();
+        }
+        // eu
+        else if (code == 'pr')
+        {
+            event.preventDefault();
+        }
+        // pr
+        else if (code == 'ma')
+        {
+            event.preventDefault();
+        }
+        // ma
+        else if (code == 'sh')
+        {
+            event.preventDefault();
+        }
+        // sh
+        else if (code == 'ka')
+        {
+            event.preventDefault();
+        }
+        // ka
+        else if (code == 'in')
+        {
+            event.preventDefault();
+        }
+        // in
+        else if (code == 'ta')
+        {
+            event.preventDefault();
+        }
+        //ta
+        else if (code == 'cc')
+        {
+            event.preventDefault();
+        }
+        //cc
+    },
+      
+  });
 });
