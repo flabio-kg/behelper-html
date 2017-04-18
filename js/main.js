@@ -416,9 +416,9 @@ $(document).ready(function () {
       selectedColor: false,
       enableZoom: false,
       colors: {
-        mc: "#DD4887",
-        kr: "#DD4887",
-        le: "#DD4887"
+        mc: "#D87093",
+        kr: "#D87093",
+        le: "#D87093"
     },
       showTooltip: true,
       onLabelShow: function(event, label, code)
@@ -427,7 +427,7 @@ $(document).ready(function () {
         {
             // Hide the label
             // event.preventDefault();
-            label.html('<p>Санкт-Петербург:</p>br<p><span>520</span>вакансий</p>br<p><span>1320</span>резюме</p>');
+            label.html('<p>Москва и Московская область:</p>br<p><span>580</span>вакансий</p>br<p><span>1410</span>резюме</p>');
         }
         else if (code == 'kr')
         {
@@ -437,7 +437,7 @@ $(document).ready(function () {
         else if (code == 'le')
         {
             // HTML Based Labels. You can use any HTML you want, this is just an example
-            label.html('<p>Ленинградская область:</p>br<p><span>520</span>вакансий</p>br<p><span>1320</span>резюме</p>');
+            label.html('<p>Санкт-Петербург и Ленинградская область:</p>br<p><span>450</span>вакансий</p>br<p><span>1150</span>резюме</p>');
         }
         else if (code == 'da')
         {
